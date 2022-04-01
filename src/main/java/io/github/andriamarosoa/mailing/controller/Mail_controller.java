@@ -40,6 +40,9 @@ public class Mail_controller {
         Mail.sendMail(sender, msg);
 
     }
-
+    @GetMapping("/")
+    public String test() throws Exception{
+        return "Hello world";
+    }
 
 }
